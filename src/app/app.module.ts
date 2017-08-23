@@ -3,9 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import {HashtagComponent} from './hashtag/hashtag.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HashtagComponent
   ],
   imports: [
     BrowserModule
