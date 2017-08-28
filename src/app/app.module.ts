@@ -1,9 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 
-import {HashtagComponent} from './hashtag/hashtag.component';
+import { TagInputModule } from 'ng2-tag-input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+
+
+import { HashtagComponent } from './hashtag/hashtag.component';
 
 @NgModule({
   declarations: [
@@ -11,8 +17,10 @@ import {HashtagComponent} from './hashtag/hashtag.component';
     HashtagComponent
   ],
   imports: [
-    BrowserModule
-  ],
+    TagInputModule, BrowserAnimationsModule,
+    BrowserModule,
+    FormsModule
+   ],
   providers: [],
   bootstrap: [AppComponent]
 })
